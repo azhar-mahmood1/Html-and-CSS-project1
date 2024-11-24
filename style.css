@@ -1,0 +1,139 @@
+/*Imprted language from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,700&display=swap');
+
+:root{
+    --main-color: #deab5f;
+    --primary-color: #312e2e;
+}
+/*Resets*/
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+/*Background Image*/
+body{
+    background-image: url("1st\ page\ bg.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.img {
+    display: flex;
+width: 130px;
+height: 130px;
+display: inline;
+transform: translateX(1px);
+}
+/*Navigation Styling*/
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: white;
+padding-top: 15px;
+transform: translateX(-190px);
+}
+/*list items to behave in row*/
+li{
+    display: inline;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    
+
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+        cursor: pointer;
+        
+}
+/*giving a solid bottom border hover effect*/
+li a:hover{
+ border-bottom:2px solid #deab5f;
+ 
+}
+.h1 {
+     font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    transform: translateX(-330px);
+    margin-top: 35px;
+}
+h4{
+    color: white;
+    width: 50%;  
+    margin-top: 70px;
+    margin-left: 80px; 
+    margin-right: auto; 
+    text-align: left;
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+}
+span{
+    color: #EE9A4D;
+}
+.span{
+    color: #FFFF00;
+}
+p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    width: 40%;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 80px;
+    word-spacing: 4px;
+}
+.btn{
+    margin-top: 45px;
+    transform: translateX(+180px);
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: sans-serif ;
+    font-size: 20px;
+    background: linear-gradient(to right, #FFD700, #FFA500); /* Gold background color */
+  border: 2px solid #ffd700; /* Gold border to match */
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 1.5s ease-in-out;
+    color: white;
+}
+.btn:hover{
+    background-color: #ffd700; /* Keep the gold color on hover */
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /* Golden glow effect */
+  color: black;
+}
+@media (max-width: 480px) {
+    nav h1 {
+      font-size: 2em;
+    }
+  
+    nav a {
+      font-size: 1em;
+    }
+  
+    .btn {
+      padding: 10px;
+    }
+  
+    .img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    h4 li {
+      padding: 10px;
+    }
+  }
